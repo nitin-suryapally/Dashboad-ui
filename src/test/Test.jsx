@@ -3,6 +3,7 @@ import Topbar from "./scenes/global/Topbar";
 import { useMode } from "./theme";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import { Box, Grid } from "@mui/material";
+import Dashboard from "./scenes/dashboard/Index";
 import Header from "./components/header/Header";
 import Chat from "./components/serviceReminder/Chat";
 import Equipment from "./components/serviceReminder/Equipment";
@@ -59,7 +60,7 @@ function App() {
                   </Box>
                   <Box
                     width="100%"
-                    height="253px"
+                    height="inherit"
                     m="5px"
                     sx={{ backgroundColor: "#e7e8df" }}
                   >
@@ -75,7 +76,7 @@ function App() {
                   <Box width="100%" m="5px" sx={{ backgroundColor: "#e7e8df" }}>
                     <Equipment />
                   </Box>
-                  <Box width="100%" height="253px" m="5px" sx={{ backgroundColor: "#e7e8df" }}>
+                  <Box width="100%" m="5px" sx={{ backgroundColor: "#e7e8df" }}>
                     <Chat />
                   </Box>
                 </Grid>
